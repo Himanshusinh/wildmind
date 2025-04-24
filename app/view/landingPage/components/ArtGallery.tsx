@@ -28,7 +28,7 @@ const ArtGallery = () => {
   return (
     <div className="min-h-screen flex flex-col items-center overflow-hidden bg-black">
       {/* Title */}
-      <h1 className={`text-5xl font-medium text-center text-white -mb-96 tracking-wide py-8 z-40 ${poppins.className}`}>
+      <h1 className={`text-5xl font-medium text-center text-white -mb-[500px] tracking-wide py-8 z-40 ${poppins.className}`}>
         Art Gallery
       </h1>
 
@@ -75,7 +75,7 @@ const ArtGallery = () => {
       </div>
 
       {/* Bottom Image */}
-      <div className="w-full h-auto z-30 -mb-56">
+      <div className="w-full h-auto z-30 -mb-[500px]">
         <Image
           src="/Landingpage/ArtGallery/bottomimage.png"
           alt="Bottom Decorative Path"
