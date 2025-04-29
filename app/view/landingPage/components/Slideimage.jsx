@@ -13,7 +13,7 @@ const SlideImage = () => {
   ];
 
   return (
-    <div className="text-white flex w-full overflow-hidden relative mt-14 bg-black">
+    <div className="text-white flex w-full overflow-hidden relative mt-10 bg-black">
       {/* Left Side - Text Animation */}
       <div className="flex flex-col gap-9 mt-14 w-1/3 overflow-hidden">
         {textRows.map((row, index) => (

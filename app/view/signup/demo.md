@@ -133,3 +133,8 @@ export default function SignUpForm() {
   )
 }
 
+
+
+
+
+text-5xl font-extrabold text-center text-white -mb-[500px] tracking-wide py-8 z-40

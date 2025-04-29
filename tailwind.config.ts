@@ -13,6 +13,7 @@ const config: Config = {
         instagram: "#E1306C",
         youtube: "#FF0000",
         border: "#E5E7EB",
+        
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

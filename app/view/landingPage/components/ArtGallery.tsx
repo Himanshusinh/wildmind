@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Poppins } from 'next/font/google';
+import { SparklesCore } from "../ui/sparkles";
 
 const poppins = Poppins({ 
   subsets: ['latin'], 
@@ -28,12 +29,14 @@ const ArtGallery = () => {
   return (
     <div className="min-h-screen flex flex-col items-center overflow-hidden bg-black">
       {/* Title */}
-      <h1 className={`text-5xl font-medium text-center text-white -mb-[500px] tracking-wide py-8 z-40 ${poppins.className}`}>
-        Art Gallery
-      </h1>
+      <div>
+        <h1 className='text-5xl font-extrabold text-center text-white -mb-[500px] tracking-wide py-8 z-50'>
+          Art gallary
+        </h1>
+      </div>
 
       {/* Top Image */}
-      <div className="w-full h-full z-30 ">
+      <div className="w-full h-full z-30 -mt-96 ">
         <Image
           src="/Landingpage/ArtGallery/topimage.png"
           alt="Top Decorative Path"

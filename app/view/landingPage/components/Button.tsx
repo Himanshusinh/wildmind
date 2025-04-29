@@ -8,7 +8,7 @@ const Button = () => {
   const router = useRouter();
 
   return (
-    <div className="flex justify-center mt-10">
+    <div className="flex justify-center mt-3">
       <button
         className="group bg-blue-600 text-white flex w-56 h-10 justify-center items-center gap-3 rounded-full relative overflow-hidden"
         onClick={() => router.push(APP_ROUTES.SIGNUP)} // ✅ onClick on button
