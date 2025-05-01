@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
                 </span>
               </h1>
             </div>
-            <p className="sm:text-sm md:text-[1.120rem] lg:text-[1.2rem] lg:leading-6 text-nowrap">
+            <p className="sm:text-sm md:text-[1.120rem] lg:text-[1.2rem] lg:leading-6 text-nowrap pt-3">
               Wild Child Studios uses advanced AI to turn <br /> imagination
               into high-quality, creative visuals.
             </p>
@@ -161,7 +161,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-[#FFFFFF52] pt-8">
+        <div className="border-t border-[#FFFFFF52] pt-10 mt-8">
           <div className="flex flex-col md:flex-row justify-start items-center">
             <p className="text-sm md:text-[0.875rem] lg:text-[1rem] text-[#616161] mb-4 md:mb-0">
               Copyright © 2025 WildMind Pvt Ltd. All rights reserved.
