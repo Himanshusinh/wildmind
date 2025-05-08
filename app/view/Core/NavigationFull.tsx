@@ -133,7 +133,7 @@ export default function NavigationFull() {
     <div className="bg-[#000000] text-white">
       <header
         ref={headerRef}
-        className="fixed top-0 left-0 right-0 z-20 bg-black/30 backdrop-blur-3xl shadow-lg"
+        className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-3xl shadow-lg"
         style={backgroundStyle}
       >
         <div className="flex items-center justify-start pl-[2vw] py-[1vh]">
@@ -142,7 +142,7 @@ export default function NavigationFull() {
               <Menu className="w-8 h-8" />
             </button>
             <div>
-              <IMAGE src={getImageUrl("core", "logo")} width={40} height={20} alt="logo" onClick={() => router.push("/")} />
+              <IMAGE src={getImageUrl("core","logo")} width={40} height={20} alt="logo" onClick={() => router.push("/")} />
             </div>
           </div>
 

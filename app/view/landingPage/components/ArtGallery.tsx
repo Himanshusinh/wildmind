@@ -22,84 +22,73 @@ const ArtGallery = () => {
     { id: 9, src: '/Landingpage/ArtGallery/img9.png' },
   ];
 
-  const CARD_WIDTH = 400;
-  const CARD_HEIGHT = 750;
-  const ANIMATION_SPEED = 15; // Adjust speed (lower = faster)
-
   return (
     <div className="min-h-screen flex flex-col items-center overflow-hidden bg-black">
       {/* Title */}
-      {/* Title */}
-<h1
-  className={`text-white text-4xl md:text-6xl font-bold mt-14 -mb-24 z-40 ${poppins.className}`}
-  style={{
-    marginTop: '20px',
-    textAlign: 'center',
-  }}
->
-  Art Gallery
-</h1>
-
-      
+      <h1
+        className={`text-white text-4xl md:text-6xl font-bold z-40 mb:text-2xl mb:mt-8 mb:mb-4 ${poppins.className}`}
+        style={{ textAlign: 'center' }}
+      >
+        Art Gallery
+      </h1>
 
       {/* Top Image */}
-      <div className="w-full h-full z-30 -mt-96 lg:-mb-[300px] ">
+      <div className="w-full z-30 ">
         <Image
           src="/Landingpage/ArtGallery/topimage.png"
           alt="Top Decorative Path"
           width={1920}
           height={1080}
-          className="w-full h-full"
+          className="w-full object-cover"
         />
       </div>
 
-      {/* Infinite Scrolling Gallery */}
-      <div className="w-full my-10 overflow-hidden relative z-10 -mt-[1025px] -mb-[1260px]">
+      {/* Scrolling Gallery */}
+      <div className="w-full overflow-hidden relative z-10 mt-4 mb-4">
         <div
-          className="flex gap-4 relative animate-scroll"
+          className="flex gap-4 animate-scroll"
           style={{
+            animation: `scrollAnimation 15s linear infinite`,
             width: 'max-content',
-            display: 'flex',
-            animation: `scrollAnimation ${ANIMATION_SPEED}s linear infinite`,
           }}
         >
           {[...galleryImages, ...galleryImages].map((image, index) => (
             <div
               key={`image-${index}`}
-              className="flex-shrink-0 relative"
-              style={{ width: `${CARD_WIDTH}px` }}
+              className="flex-shrink-0 w-[300px] h-[500px] mb:w-[160px] mb:h-[240px]"
             >
-              <div className="relative" style={{ height: `${CARD_HEIGHT}px` }}>
-                <Image
-                  src={image.src}
-                  alt={`Artwork ${image.id}`}
-                  width={CARD_WIDTH}
-                  height={CARD_HEIGHT}
-                  objectFit="cover"
-                  className="shadow-2xl rounded-lg"
-                />
-              </div>
+              <Image
+                src={image.src}
+                alt={`Artwork ${image.id}`}
+                width={400}
+                height={750}
+                className="w-full h-full rounded-lg object-cover shadow-2xl"
+              />
             </div>
           ))}
         </div>
       </div>
 
       {/* Bottom Image */}
-      <div className="w-full h-auto z-30 -mb-[500px] lg:-mt-[340px]">
+      <div className="w-full z-30 mb:mt-4">
         <Image
           src="/Landingpage/ArtGallery/bottomimage.png"
           alt="Bottom Decorative Path"
           width={1920}
           height={1080}
-          className="w-full h-auto"
+          className="w-full object-cover"
         />
       </div>
 
-      {/* Smooth Scrolling Keyframes */}
+      {/* Keyframes */}
       <style jsx>{`
         @keyframes scrollAnimation {
-          from { transform: translateX(0); }
-          to { transform: translateX(-50%); }
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
         }
       `}</style>
     </div>
