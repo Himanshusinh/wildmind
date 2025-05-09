@@ -18,12 +18,12 @@ export default function FeaturesSection() {
       </div>
 
       <div className="flex flex-wrap gap-10 justify-center">
-        <FeaturesCard imageSrc="/home/text-to-image.png" label="run"   />
-        <FeaturesCard imageSrc="/home/text-to-videos.png" label="coming"   />
-        <FeaturesCard imageSrc="/home/text-to-music.png" label="coming"    />
-        <FeaturesCard imageSrc="/home/text-to-3d.png" label="coming"    />
-        <FeaturesCard imageSrc="/home/socialmedia.png" label="coming"    />
-        <FeaturesCard imageSrc="/home/storytelling.png" label="coming"    />
+        <FeaturesCard imageSrc="/home/imagegeneration.png" label="run"   />
+        <FeaturesCard imageSrc="/home/videogeneratiin.png" label="coming"   />
+        <FeaturesCard imageSrc="/home/musicgeneration.png" label="coming"    />
+        <FeaturesCard imageSrc="/home/3d.png" label="coming"    />
+        <FeaturesCard imageSrc="/home/media.png" label="coming"    />
+        <FeaturesCard imageSrc="/home/story.png" label="coming"    />
       </div>
     </section>
   )
